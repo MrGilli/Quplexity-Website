@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.highlight {
+    color: #6C6C6C;
+}
+
+.header {
+    width: 100%;
+    height: 100vh; /* Fit to viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-content {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.header-content p {
+    font-size: 2em; /* Adjust font size for smaller screens */
+    margin: 0;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .header-content p {
+        font-size: 2.5em;
+    }
+
+    #header-img {
+        width: 40%;
+        height: auto;
+    }
+
+    .header-content {
+        width: 50%;
+        margin: 0;
+        text-align: left;
+    }
+}
+
+@media (min-width: 900px) {
+    .header-content {
+        max-width: 800px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .header-content p {
+        font-size: 3em;
+    }
+
+    #header-img {
+        width: 30%;
+        height: auto;
+    }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#github-button {
+    padding: 15px;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid #5F5A94;
+    color: #5F5A94;
+}
+
+#github-button:hover {
+    padding: 20px;
+    background-color: #5F5A94;
+    border: 2.5px solid #5F5A94;
+    color: white;
+    transition: 0.8s;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #5F5A94;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #5F5A94;
+    border: 2px solid #5F5A94;
+    color: white;
+}
+
+
+/* downloads.html styling:*/
+
+.body-content {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
